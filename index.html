@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TradeX | Professional Trading</title>
+
+    <link rel="stylesheet" href="../mahmoud/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>TR</span> TradeX
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#markets">Markets</a>
+            <a href="#signals">Signals</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-btn" onclick="scrollToSection('contact')">
+            Join Now
+        </button>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ● PROFESSIONAL TRADING
+            </div>
+
+            <h1>
+                Trade With
+                <span>Precision.</span>
+            </h1>
+
+            <p>
+                Advanced market analysis, professional trading strategies
+                and real-time insights designed to help you understand
+                the markets.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="scrollToSection('signals')">
+                    Explore Signals →
+                </button>
+
+                <button class="secondary-btn" onclick="scrollToSection('about')">
+                    About Trader
+                </button>
+            </div>
+
+            <div class="stats">
+
+                <div>
+                    <strong>5+</strong>
+                    <small>Years Experience</small>
+                </div>
+
+                <div>
+                    <strong>1.2K+</strong>
+                    <small>Traders</small>
+                </div>
+
+                <div>
+                    <strong>24/7</strong>
+                    <small>Market Analysis</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TRADING CARD -->
+
+        <div class="trading-card">
+
+            <div class="card-header">
+                <div>
+                    <span class="symbol">EUR/USD</span>
+                    <small>Forex</small>
+                </div>
+
+                <span class="live">● LIVE</span>
+            </div>
+
+            <div class="price">
+                <span id="price">1.08542</span>
+                <small id="change">+0.42%</small>
+            </div>
+
+            <div class="chart">
+
+                <div class="grid"></div>
+
+                <svg viewBox="0 0 500 200" preserveAspectRatio="none">
+
+                    <polyline
+                        id="chartLine"
+                        points="
+                        0,160
+                        30,150
+                        60,165
+                        90,130
+                        120,145
+                        150,110
+                        180,120
+                        210,90
+                        240,105
+                        270,80
+                        300,95
+                        330,65
+                        360,75
+                        390,50
+                        420,70
+                        450,40
+                        500,55
+                        "
+                    />
+
+                </svg>
+
+            </div>
+
+            <div class="chart-footer">
+                <span>1H</span>
+                <span>4H</span>
+                <span class="active">1D</span>
+                <span>1W</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MARKETS -->
+
+    <section class="section" id="markets">
+
+        <div class="section-title">
+            <span>MARKETS</span>
+            <h2>Market Overview</h2>
+            <p>Track the markets that matter.</p>
+        </div>
+
+        <div class="market-grid">
+
+            <div class="market-card">
+                <div class="market-top">
+                    <span>EUR/USD</span>
+                    <span class="positive">+0.42%</span>
+                </div>
+
+                <h3>1.08542</h3>
+
+                <div class="mini-chart"></div>
+            </div>
+
+
+            <div class="market-card">
+                <div class="market-top">
+                    <span>GBP/USD</span>
+                    <span class="positive">+0.31%</span>
+                </div>
+
+                <h3>1.29421</h3>
+
+                <div class="mini-chart"></div>
+            </div>
+
+
+            <div class="market-card">
+                <div class="market-top">
+                    <span>GOLD</span>
+                    <span class="negative">-0.18%</span>
+                </div>
+
+                <h3>$2,428.30</h3>
+
+                <div class="mini-chart down"></div>
+            </div>
+
+
+            <div class="market-card">
+                <div class="market-top">
+                    <span>BTC/USD</span>
+                    <span class="positive">+1.24%</span>
+                </div>
+
+                <h3>$67,842</h3>
+
+                <div class="mini-chart"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SIGNALS -->
+
+    <section class="section dark-section" id="signals">
+
+        <div class="section-title">
+            <span>TRADING SIGNALS</span>
+            <h2>Latest Signals</h2>
+            <p>Professional setups and market opportunities.</p>
+        </div>
+
+        <div class="signals-table">
+
+            <div class="table-header">
+                <span>PAIR</span>
+                <span>TYPE</span>
+                <span>ENTRY</span>
+                <span>STATUS</span>
+            </div>
+
+
+            <div class="signal-row">
+
+                <strong>EUR/USD</strong>
+
+                <span class="buy">
+                    BUY
+                </span>
+
+                <span>1.08450</span>
+
+                <span class="status">
+                    Active
+                </span>
+
+            </div>
+
+
+            <div class="signal-row">
+
+                <strong>GBP/USD</strong>
+
+                <span class="sell">
+                    SELL
+                </span>
+
+                <span>1.29620</span>
+
+                <span class="status">
+                    Active
+                </span>
+
+            </div>
+
+
+            <div class="signal-row">
+
+                <strong>XAU/USD</strong>
+
+                <span class="buy">
+                    BUY
+                </span>
+
+                <span>2,421.50</span>
+
+                <span class="closed">
+                    Closed
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section about" id="about">
+
+        <div class="about-image">
+
+            <div class="profile-circle">
+                TRADER
+            </div>
+
+        </div>
+
+        <div class="about-content">
+
+            <span>ABOUT THE TRADER</span>
+
+            <h2>
+                Experience.
+                <br>
+                Strategy.
+                <br>
+                Discipline.
+            </h2>
+
+            <p>
+                I focus on technical analysis, market structure and
+                disciplined risk management to identify high-quality
+                trading opportunities.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    <b>01</b>
+                    <span>Technical Analysis</span>
+                </div>
+
+                <div>
+                    <b>02</b>
+                    <span>Market Structure</span>
+                </div>
+
+                <div>
+                    <b>03</b>
+                    <span>Risk Management</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta" id="contact">
+
+        <div>
+
+            <span>READY TO START?</span>
+
+            <h2>
+                Understand the market.
+                <br>
+                Trade with a plan.
+            </h2>
+
+            <p>
+                Join the trading community and get access to
+                market analysis and educational content.
+            </p>
+
+            <button class="primary-btn" onclick="joinCommunity()">
+                Join Community →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            <span>TR</span> TradeX
+        </div>
+
+        <p>
+            © 2026 TradeX. All rights reserved.
+        </p>
+
+        <small>
+            Trading involves risk. This website does not provide
+            financial advice.
+        </small>
+
+    </footer>
+
+
+    <script src="../mahmoud/script.js"></script>
+
+</body>
+</html>
